@@ -23,8 +23,11 @@ body {
     margin: 0;
     padding: 0;
     letter-spacing: 1px;
-    position: relative; /* 1. Set body as the positioning container */
-    padding-bottom: 50px; /* 2. Add space at the bottom for the footer */
+    position: relative; /* Make body the positioning context for the absolutely positioned footer */
+}
+
+#content-wrap {
+    padding-bottom: 50px; /* This creates space for the footer at the bottom of the content-wrap */
 }
 
 .links {
@@ -139,11 +142,11 @@ footer {
     font-weight: 200;
     letter-spacing: 2px;
     margin: 0;
-    padding: 15px 0; /* Added some padding for better spacing */
-    position: absolute; /* 3. Position the footer */
-    bottom: 0; /* Pin it to the bottom */
+    padding: 15px 0;
+    position: absolute; /* Position the footer absolutely */
+    bottom: 0; /* Pin it to the bottom of the body */
     width: 100%; /* Make it full width */
-    height: 20px; /* Explicit height to match body's padding-bottom */
+    height: 20px; /* Explicit height. Total footer height (20px + 15px top + 15px bottom) = 50px */
 }
 
 footer p {
