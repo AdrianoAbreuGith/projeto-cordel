@@ -23,8 +23,8 @@ body {
     margin: 0;
     padding: 0;
     letter-spacing: 1px;
-    
-    
+    position: relative; /* 1. Set body as the positioning container */
+    padding-bottom: 50px; /* 2. Add space at the bottom for the footer */
 }
 
 .links {
@@ -85,6 +85,9 @@ section {
     
 }
 
+/* Add this new rule for the main element to make it grow */
+main { }
+
 main > section > p {
     
     font-family: "Sriracha", cursive;
@@ -129,16 +132,18 @@ main > section > p {
 }
 
 footer {
-    position: fixed;
     background-color: black;
     color: white;
     text-align: center;
     font-size: 20px;
     font-weight: 200;
     letter-spacing: 2px;
-    width: 100%;
-    max-height: 500px;
     margin: 0;
+    padding: 15px 0; /* Added some padding for better spacing */
+    position: absolute; /* 3. Position the footer */
+    bottom: 0; /* Pin it to the bottom */
+    width: 100%; /* Make it full width */
+    height: 20px; /* Explicit height to match body's padding-bottom */
 }
 
 footer p {
