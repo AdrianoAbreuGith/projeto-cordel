@@ -103,6 +103,7 @@ main > section > p {
 }
 
 .box-imagen1 {
+    display: inline-block;
     background-image: url(imagens/background001.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -111,6 +112,7 @@ main > section > p {
 }
 
 .box-imagen2 {
+    display: inline-block;
     background-image: url(imagens/background002.jpg);
     background-size: cover;
     background-attachment: fixed;
